@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import './assets/css/main.css';
 import Sidebar from './components/sidebar/Sidebar';
 import MainContent from './components/mainContent/MainContent';
+import Footer from './components/footer/Footer';
 
 
 
@@ -10,9 +11,10 @@ function App() {
   const [animeList, SetAnimeList] = useState([]);
   const [topAnime, SetTopAnime] = useState([]);
   const [search, SetSearch] = useState("");
+  const apiUrl = `https://api.jikan.moe/v3`;
 
   const getTopAnime = async () => {
-    const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
+    const temp = await fetch(apiUrl + `/top/anime/1/bypopularity`)
     .then(res => res.json());
 
     SetTopAnime(temp.top.slice(0, 5));
@@ -27,7 +29,7 @@ function App() {
   }
 
   const FetchAnime = async (query) => {
-    const temp = await fetch(`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=10`)
+    const temp = await fetch(apiUrl + `/search/anime?q=${query}&order_by=title&sort=asc&limit=10`)
     .then(res => res.json());
     console.log(temp.results);
 
@@ -57,6 +59,7 @@ function App() {
         animeList={animeList}  />
 
       </div>
+      <Footer/>
     </div>
   );
 }

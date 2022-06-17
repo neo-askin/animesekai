@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './animeCard.css';
 
 const AnimeCard = ({anime}) => {
   return (
@@ -7,7 +8,7 @@ const AnimeCard = ({anime}) => {
             <figure>
                 <img src={anime.image_url} alt="anime image"/>
             </figure>
-            <h3>{ anime.title }</h3>
+            <div className="anime-title-container"><h3 className="anime-title">{ anime.title }</h3></div>
 
         </a>
 
