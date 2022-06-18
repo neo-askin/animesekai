@@ -3,16 +3,18 @@ import './animeCard.css';
 
 const AnimeCard = ({anime}) => {
   return (
-    <article className="anime-card">
-        <a href="">
-            <figure>
+    <div className="anime-card-container">
+        <a className="anime-card" href="">
+            <div>
                 <img src={anime.image_url} alt="anime image"/>
-            </figure>
-            <div className="anime-title-container"><h3 className="anime-title">{ anime.title }</h3></div>
+            </div>
+           
 
         </a>
 
-    </article>
+        <div className="anime-title-container"><h3 className="anime-title">{ anime.title }</h3></div>
+
+    </div>
   )
 }
 

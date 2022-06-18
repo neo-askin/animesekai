@@ -6,10 +6,10 @@ const MainContent = (props) => {
   return (
     <main>
         <div className="main-head">
-            <form className="search-box"
+            <form className="search-box-container"
                   onSubmit={props.handleSearch}>
 
-                <input
+                <input className="search-box"
                 type="search"
                 placeholder="rechercher un anime"
                 value={props.search}
@@ -21,7 +21,8 @@ const MainContent = (props) => {
             </form>
 
         </div>
-        <div className="anime-list">
+        <ul className="anime-list">
+          <li><div>
            {props.animeList.map(anime => (
                <AnimeCard
                 anime={anime}
@@ -30,7 +31,9 @@ const MainContent = (props) => {
                />
            ))} 
 
-        </div>
+        </div></li>
+        </ul>
+      
 
     </main>
   )

@@ -44,22 +44,26 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app-container">
       <Header/>
 
       <div className="content-wrap">
-        <Sidebar
-          topAnime={topAnime}/>
-
-        <MainContent
+        
+      <MainContent
 
         handleSearch={handleSearch}
         search={search}
         SetSearch={SetSearch}
         animeList={animeList}  />
 
+      <Sidebar
+        topAnime={topAnime}/>
+
+
       </div>
-      <Footer/>
+      <div className="footer-container">
+       <Footer/>
+      </div>
     </div>
   );
 }

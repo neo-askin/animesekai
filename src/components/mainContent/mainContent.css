@@ -1,14 +1,29 @@
-.search-box {
+.search-box-container {
     position: relative;
-    left: 60%;
+    left: 68%;
+    
+}
+
+.search-box {
+    width: 23%;
 }
 
 .anime-list {
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
+    
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+    position: relative;
+    left: 67%;
+    margin-top: 0.5%;
+    
+    
+   
+   
+    
+    
+    
    
     
 }
