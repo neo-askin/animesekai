@@ -14,7 +14,9 @@ const MainContent = (props) => {
                 placeholder="rechercher un anime"
                 value={props.search}
                 onChange={e => props.SetSearch(
-                    e.target.value )}
+                    e.target.value )
+            
+                  }
                 
                 />
 

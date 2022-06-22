@@ -9,6 +9,7 @@
 .section-title {
     margin-left: 50%;
     margin-bottom: 5%;
+    color: white;
 }
 
 .top-anime {
@@ -37,5 +38,5 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }

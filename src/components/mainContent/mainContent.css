@@ -6,6 +6,12 @@
 
 .search-box {
     width: 23%;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 15px;
+    height: 45px;
+    width: 320px;
 }
 
 .anime-list {
@@ -17,13 +23,19 @@
     position: relative;
     left: 67%;
     margin-top: 0.5%;
-    
-    
    
-   
-    
-    
     
    
     
+}
+
+.anime-list li {
+    overflow: hidden;
+    overflow-y: auto;
+   
+    
+}
+
+.anime-list li::-webkit-scrollbar {
+    display: none;
 }

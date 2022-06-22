@@ -8,6 +8,8 @@
     
    
     
+   
+    
 }
 
 .anime-card {
@@ -16,15 +18,34 @@
     height: 250px;
     overflow-y: hidden;
    
+   
     
     
+}
+
+.anime-card img {
+    width: 60%;
+    height: 100px;
 }
 
 
 
 
 .anime-title-container {
-    text-align: center;
-    width: 100px;
+  
+    width: 70%;
+    height: 100px;
     overflow-y: hidden;
+    position: relative;
+    right: 18%;
+    margin-top: 3%;
+    
+    
+}
+
+.anime-title-container h3 {
+    font-size: 15px;
+    color: white;
+    
+    
 }
